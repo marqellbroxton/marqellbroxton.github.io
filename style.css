@@ -1,0 +1,54 @@
+
+
+
+h1 {
+	text-align: center;
+	font-size: 150px;
+	color: yellow;
+	text-shadow: 5px 10px black;
+}
+
+h4 {
+	float: right;
+	position: absolute;
+	top: 350px;
+	left: 900px;
+	font-size: 50px;
+}
+
+
+h2 {
+	text-align: left;
+	font-size: 50px;
+	text-indent: 10%;
+	background-color: black;
+}
+body {
+	background-color: grey;
+	font-size: 27px;
+	color: white;
+	text-align: center;
+}
+
+h3 {
+	font-size: 22px;
+	position: absoulte;
+	top: 1000px;
+	float: right;
+	text-align: left;
+	line-height: 2;
+	text-indent: line 2 10%;
+}
+
+p {
+	text-align: left;
+	text-indent: 2%;
+	float: left;
+	margin: 40px;
+	line-height: 2;
+}
+
+a {
+	color: white;
+	font-size: 30px;
+}
