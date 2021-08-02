@@ -2,32 +2,26 @@
 <html>
 <head>
 	<title>Sudoku Backtracking Game</title>
-	<link rel="stylesheet" href="style.css">
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<a href="index.html" class="button">Back</a>
 	<h1>Sudoku</h1>
 	<h4>Python Code:</h4>
 	<h2>What I've Learned</h2>
-	<p>I learned that this puzzle game is similar<br/>
-	to debugging. One issue occuring from a line<br/>
-	of other issues, making it so that you have<br/>
-	to backtrack and see where the problem<br/>
-	begins. The algorithm here will use all the<br/>
-	functions throughout the coding and will <br/>
-	backtrack for me. The 'find' function will<br/>
-	allow me to know if there's been a solution,<br/>
-	returning true if there is. Checking each<br/>
-	number 1-9 and entering them into each box<br/>
-	to see if it's a valid entry. If it is a<br/>
-	valid entry it'll enter it into the board and<br/>
-	keep trying until one of the entries are<br/>
-	correct. Once it goes through all the valid <br/>
-	possiblities and none are true, it will then<br/>
-	backtrack to the last answer to reset because<br/>
-	the current answer can't be correct.<br/>
+	<p>I learned that this puzzle game is similar to debugging. One<br/>
+	issue occuring from a line of other issues, making it so that you<br/> 
+	have to backtrack and see where the problem begins. The algorithm<br/>
+	here will use all the functions throughout the coding and will<br/> 
+	backtrack for me. The 'find' function will allow me to know if<br/> 
+	there's been a solution, returning true if there is. Checking each<br/> 
+	number 1-9 and entering them into each box to see if it's a valid<br/>
+	entry. If it is a valid entry it'll enter it into the board and keep<br/> 
+	trying until one of the entries are correct. Once it goes through<br/>
+	all the valid possiblities and none are true, it will then backtrack<br/> 
+	to the last answer to reset because the current answer can't be correct.<br/><br/><br/>
 	</p>
 	
 	<h3>
@@ -49,7 +43,7 @@
 
 					bo[row][col] = 0<br/>
 
-			return False<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			return False<br/><br/><br/><br/><br/>
 
 
 		def valid(bo, num, pos):<br/>
@@ -72,7 +66,7 @@
 					if bo[i][j] == num and (i,j) != pos:<br/>
 						return False<br/>
 
-			return True<br/><br/><br/><br/><br/><br/><br/><br/>
+			return True<br/><br/><br/><br/><br/>
 
 
 		def print_board(bo):<br/>
@@ -101,40 +95,28 @@
 	
 	
 	</h3>
-	<p>Now here is where it'll check whether the<br/>
-	board is valid or not and if the number along<br/>
-	with the position is also valid. We'll check<br/>
-	each element for the row and see if it is<br/>
-	equal to the number we added. You can not have<br/>
-	the same number in a row so we'll check for<br/>
-	that and make a change in our entries if<br/>
-	that's the case. The same will happen for each<br/>
-	column as you can not have the same number<br/>
-	entry in a single column. There are nine<br/>
-	boxes/sections that contain nine numbers,<br/>
-	which also can't have the same number within<br/>
-	any of them. Knowing the box we want to work<br/>
-	on (0,1,2), then having it muliplied by 3 will<br/>
-	show which column and row (position) we are<br/>
-	currently working on. It will return false if<br/>
-	we find a duplicate or the entry is invalid,<br/>
-	but if we run through all the checks and it is<br/>
-	valid, it will return true.
-	<br/></P>
-	<p>You want to use the 'def' function to print<br/>
-	the game board so we have a visual of what's<br/>
-	happening. After every three rows we want to<br/>
-	print a dashed line to seperate the nine boxes<br/>
-	with their nine elements, creating an<br/>
-	organized grid. The 'end' function just makes<br/>
-	sure that it doesn't keep going for the same<br/>
-	row but starts a new one after printing nine<br/>
-	numbers across. It also keeps the numbers of<br/>
-	each row and column within formation of the<br/>
-	board. The 'find_empty' is for finding a empty<br/>
-	square on the board and checking if it is<br/>
-	equal to zero, if it is we'll get a return of<br/>
-	(row,col), (y,x).
+	<p>Now here is where it'll check whether the board is valid or not and<br/>
+	if the number along with the position is also valid. We'll check each<br/>
+	element for the row and see if it is equal to the number we added. You<br/> 
+	can not have the same number in a row so we'll check for that and make<br/>
+	a change in our entries if that's the case. The same will happen for each<br/>
+	column as you can not have the same number entry in a single column.<br/>
+	There are nine boxes/sections that contain nine numbers, which also<br/>
+	can't have the same number within any of them. Knowing the box we<br/>
+	want to work on (0,1,2), then having it muliplied by 3 will show which<br/>
+	column and row (position) we are currently working on. It will return<br/>
+	false if we find a duplicate or the entry is invalid, but if we run through<br/>
+	all the checks and it is valid, it will return true.
+	<br/><br/><br/><br/><br/></P>
+	<p>You want to use the 'def' function to print the game board so we have a<br/>
+	visual of what's happening. After every three rows we want to print a<br/>
+	dashed line to seperate the nine boxes with their nine elements, creating<br/>
+	an organized grid. The 'end' function just makes sure that it doesn't keep<br/>
+	going for the same row but starts a new one after printing nine numbers<br/>
+	across. It also keeps the numbers of each row and column within formation<br/>
+	of the board. The 'find_empty' is for finding a empty square on the board and<br/>
+	checking if it is equal to zero, if it is we'll get a return<br/>
+	of (row,col), (y,x).
 	</p>
 </body>
 </html>
