@@ -1,244 +1,54 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Developer Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/pinpoint.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-		<!-- Wrapper --> 
-			<div id="wrapper" class="fade-in">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>My Portfolio</h1>
-						<p>A showcase of my abilities.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>PinPoint</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Developer</a>
-					</header>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Welcome!</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">My Name Is<br />
-									Marqell Broxton</a></h2>
-									<p>I'm a passionate developer but I'm even more passionate about technology.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/light bulb.jpg" alt="light bulb" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Check It Out</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="#">Project 1</a></h2>
-									</header>
-									<a href="https://dirz7thwnsmna.cloudfront.net/" class="image fit"><img src="images/screens.jpg" alt="" /></a>
-									<p><b>Book Store:</b> This is a react app built with AWS Amplify and Stripe then deployed with S3 and cloudfront.
-										User order's are stored in DynamoDB as payments are sent to Stripe. Amazon Cognito user pool groups are used to
-										identify authentification for admins and guests when people sign up to buy books. Functions are ran through Lambda
-										for creating orders and processing payments.
-									
-									
-									</p>
-									<ul class="actions special">
-										<li><a href="https://dirz7thwnsmna.cloudfront.net/" class="button">Full Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Project 2</a></h2>
-									</header>
-									<a href="http://3.83.133.73/" class="image fit"><img src="images/python.jpg" alt="" /></a>
-									<p><b>Todo List App:</b> To help me keep track of things I have to do when life gets 
-									crazy I made a todo list web app that allows me to add task and mark them as complete 
-									once I've done them. This project was made with Python/Django and deployed with 
-									AWS EC2. In order to use the app you must log in first and below is 
-									a guest log in for anyone to try the app!
-									<br/>
-									username: guest | 
-									password: instance
-									
-									
-									</p>
-									<ul class="actions special">
-										<li><a href="http://3.83.133.73/" class="button">Full Project</a></li>
-									</ul>
-								</article>
-								
-								<article>
-									<header>
-										<h2><a href="#">Project 3</a></h2>
-									</header>
-									<a href="http://54.224.213.184/" class="image fit"><img src="images/chip.jpg" alt="" /></a>
-									<p><b>Contact List App:</b> Django has allowed me to produce a full stack contacts list app where I can 
-									add, delete, and edit contacts. There is also a search bar that can be used to search for
-									a name specifically or a list a names under a letter or number. The displayed screen is as 
-									if you were looking at it from a cell phone screen. Launched with AWS EC2 Windows.
-									<br/>
-									
-									
-									</p>
-									<ul class="actions special">
-										<li><a href="http://54.224.213.184/" class="button">Full Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Project 4</a></h2>
-									</header>
-									<a href="bww.html" class="image fit"><img src="images/planet.jpg" alt="" /></a>
-									<p><b>PinPoint:</b> PinPoint is a web app I made with a traveling theme. Built with React 
-									and JavaScript I was able to practice a lot of HTML and CSS. The homepage is the only 
-									page with UI the other pages in the navbar are just landing pages including the sign up.
-									This project is more of a template and was a great way of applying my knowledge as a 
-									developer.
-									
-									
-									</p>
-									<ul class="actions special">
-										<li><a href="bww.html" class="button">Full Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Project 5</a></h2>
-									</header>
-									<a href="bww.html" class="image fit"><img src="images/everything.jpg" alt="" /></a>
-									<p><b>Buffalo Wild Wings Website:</b> I built this mock-up website with Django and it has
-									a sign up and login/authentication system to verify as well as protect users with any saved data or 
-									personal information on their account.
-									
-									
-									</p>
-									<ul class="actions special">
-										<li><a href="bww.html" class="button">Full Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Project 6</a></h2>
-									</header>
-									<a href="http://18.208.177.155/" class="image fit"><img src="images/robot.jpg" alt="" /></a>
-									<p><b>My Blog:</b> What better way to keep track of my life than with a blog to journal
-									how I'm feeling. On this webpage made with Django and HTML/CSS I can make daily post keeping
-									updates on what's happening currently or I can research my favorite topics and give educational
-									information on them. Each post shows the user's name and the time they posted.
-									
-									
-									</p>
-									<ul class="actions special">
-										<li><a href="http://18.208.177.155/" class="button">Full Project</a></li>
-									</ul>
-								</article>
-
-								<article>
-									<header>
-										<h2><a href="#">Project 7</a></h2>
-									</header>
-									<a href="sudo.html" class="image fit"><img src="images/setup.jpg" alt="" /></a>
-									<p><b>Sudoku Backtracking Game:</b> Using python to show problem solving and backtracking algorithm.
-									First I made a simple text board for the python program to solve, then I
-									created a GUI graphical board to make it into a visual game. You can try to solve it yourself or
-									press the spacebar to watch it solve itself!
-									
-									</p>
-									<ul class="actions special">
-										<li><a href="sudo.html" class="button">Full Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Project 8</a></h2>
-									</header>
-									<a href="maze.html" class="image fit"><img src="images/do something great.jpg" alt="" /></a>
-									<p><b>Maze Generator:</b> This project demonstrates problem solving and how the maze generator 
-									finds the shortest path from the starting to the end point. First it starts with a grid and
-									goes through every square creating a maze layout then once it is done it will start.
-									 </p>
-									<ul class="actions special">
-										<li><a href="maze.html" class="button">Full Project</a></li>
-									</ul>
-								</article>
-							</section>
-
-						<!-- Footer -->
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>From</h3>
-								<p>Gaithersburg, Maryland
-								</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">marqell_broxton@aol.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
