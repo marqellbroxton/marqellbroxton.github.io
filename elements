@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
+						<a href="index.html" class="logo">Home</a>
 					</header>
 
 				<!-- Nav -->
@@ -495,4 +495,5 @@ print 'It took ' + i + ' iterations to sort the deck.';
 			<script src="assets/js/main.js"></script>
 
 	</body>
+
 </html>
