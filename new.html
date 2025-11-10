@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Forensics Labs – NWIT 263</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      background-color: #161b22;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #58a6ff;
+    }
+    header p {
+      color: #c9d1d9;
+      max-width: 700px;
+      margin: 10px auto 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    details {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      transition: 0.3s;
+    }
+    details:hover {
+      border-color: #58a6ff;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #58a6ff;
+      list-style: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    details p, details ul, details ol {
+      margin: 10px 0;
+      color: #c9d1d9;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 10px;
+      color: #8b949e;
+      font-size: 0.9rem;
+      border-top: 1px solid #21262d;
+      margin-top: 50px;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Digital Forensics Labs – NWIT 263</h1>
+    <p>
+      This page showcases my completed Digital Forensics labs demonstrating hands-on experience with
+      forensic imaging, hashing, metadata analysis, steganography, and forensic artifact discovery.
+    </p>
+  </header>
+
+  <main>
+
+    <!-- LAB 02 -->
+    <details open>
+      <summary>Lab 02 – Kali Linux Installation (9/11/2025)</summary>
+      <p><strong>Objective:</strong> Install Kali Linux in a virtual environment and verify its functionality.</p>
+      <ul>
+        <li>Installed Kali Linux ISO using VMware Fusion.</li>
+        <li>Configured VM: 4GB RAM, 20GB disk, Debian (64-bit).</li>
+        <li>Verified system via <code>uname -a</code> and <code>lsb_release -a</code>.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> Successfully created a working Kali Linux environment for forensic use.</p>
+    </details>
+
+    <!-- LAB 03 -->
+    <details>
+      <summary>Lab 03 – Hashing Lab (Windows & Linux) (9/19/2025)</summary>
+      <p><strong>Objective:</strong> Demonstrate how file hashing ensures data integrity and authenticity.</p>
+      <ul>
+        <li>Used CertUtil in Windows and sha256sum/md5sum in Linux.</li>
+        <li>Generated and compared MD5, SHA1, and SHA256 hashes.</li>
+        <li>Confirmed altered files produced different hashes.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> Showed that hashing is reliable for tamper detection in digital forensics.</p>
+    </details>
+
+    <!-- LAB 04 -->
+    <details>
+      <summary>Lab 04 – FTK Imager: Create, Mount, and Dismount (9/19/2025)</summary>
+      <p><strong>Objective:</strong> Use FTK Imager to create and verify a forensic disk image.</p>
+      <ul>
+        <li>Created E01 forensic image with MD5/SHA1 verification.</li>
+        <li>Mounted image in read-only mode (Drive F:).</li>
+        <li>Verified integrity and dismounted image safely.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> Demonstrated proper forensic imaging and verification workflow.</p>
+    </details>
+
+    <!-- LAB 05 -->
+    <details>
+      <summary>Lab 05 – Enabling & Disabling USB Write Protection (9/26/2025)</summary>
+      <p><strong>Objective:</strong> Simulate a software-based write blocker using Windows Registry.</p>
+      <ul>
+        <li>Enabled write protection via <code>StorageDevicePolicies</code> key.</li>
+        <li>Tested write failure; reverted change to restore write access.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> Demonstrated how software write blockers preserve evidence integrity.</p>
+    </details>
+
+    <!-- LAB 06 -->
+    <details>
+      <summary>Lab 06 – Extracting and Mapping GPS Data (10/03/2025)</summary>
+      <p><strong>Objective:</strong> Extract GPS metadata and map coordinates using ExifTool.</p>
+      <ul>
+        <li>Used ExifTool to extract GPS coordinates from image.</li>
+        <li>Converted DMS to decimal and plotted in Google Maps.</li>
+        <li>Removed metadata to demonstrate privacy protection.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> Highlighted forensic value and privacy risks of photo metadata.</p>
+    </details>
+
+    <!-- LAB 07 -->
+    <details>
+      <summary>Lab 07 – File Hashing with Febooti Hash & CRC (10/16/2025)</summary>
+      <p><strong>Objective:</strong> Verify file integrity using Febooti Hash & CRC utility.</p>
+      <ul>
+        <li>Generated MD5 and SHA-256 hashes before and after file edits.</li>
+        <li>Observed avalanche effect when data was modified.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> Reinforced importance of hashing for digital evidence validation.</p>
+    </details>
+
+    <!-- LAB 08 -->
+    <details>
+      <summary>Lab 08 – Extracting Metadata from MS Office Files (10/23/2025)</summary>
+      <p><strong>Objective:</strong> Examine file metadata such as creation and modification timestamps.</p>
+      <ul>
+        <li>Viewed metadata through file properties.</li>
+        <li>Compared <em>Date Created</em> vs. <em>Date Modified</em>.</li>
+        <li>Explained forensic significance of file timestamps.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> Metadata reveals timeline and authorship for forensic reconstruction.</p>
+    </details>
+
+    <!-- LAB 09 -->
+    <details>
+      <summary>Lab 09 – Windows Forensic Artifacts (10/23/2025)</summary>
+      <p><strong>Objective:</strong> Identify persistence and activity artifacts within Windows systems.</p>
+      <ul>
+        <li>Examined Registry Run keys, Prefetch, and Recent Files.</li>
+        <li>Detected traces of suspicious execution and persistence.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> Demonstrated artifact analysis for attacker activity reconstruction.</p>
+    </details>
+
+    <!-- LAB 10 -->
+    <details>
+      <summary>Lab 10 – Hard Links vs. Soft Links (10/31/2025)</summary>
+      <p><strong>Objective:</strong> Compare file system link behaviors and forensic implications.</p>
+      <ul>
+        <li>Created and analyzed hard links and symbolic links in Linux.</li>
+        <li>Observed inode sharing and persistence after deletion.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> Explained link behavior relevance in forensic data recovery.</p>
+    </details>
+
+    <!-- LAB 11 -->
+    <details>
+      <summary>Lab 11 – Hidden Message Extraction with Steghide (10/31/2025)</summary>
+      <p><strong>Objective:</strong> Use steganography to hide and recover data within images.</p>
+      <ul>
+        <li>Embedded text file inside a JPEG using Steghide.</li>
+        <li>Verified differences via hashing and metadata analysis.</li>
+        <li>Extracted hidden message successfully.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> Demonstrated covert data hiding and forensic detection techniques.</p>
+    </details>
+
+    <p style="margin-top: 30px; text-align:center;">
+      <a href="/" style="color:#58a6ff;">← Back to Home</a>
+    </p>
+  </main>
+
+  <footer>
+    © 2025 Marqell Broxton | Digital Forensics Portfolio
+  </footer>
+</body>
+</html>
